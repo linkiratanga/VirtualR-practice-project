@@ -1,0 +1,27 @@
+how to create
+open terminal
+npm create vite@latest
+
+Enter project name
+choose a framework
+Choose a programming language 
+
+install all dependencies:
+npm install
+
+run react using :
+npm run dev
+
+---------------------------------
+
+install tailwindccs as a plugin
+npm install tailwindcss @tailwindcss/vite
+
+add these into "vite.config.js" file :
+import tailwindcss from '@tailwindcss/vite'
+ tailwindcss(),
+
+ add these into mother css file :
+ @import "tailwindcss";
+
+restart react 
