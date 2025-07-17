@@ -1,4 +1,3 @@
-import "./index.css"
 
 export default function Picker({values}){
     const randomIndex = Math.floor(Math.random() * values.length) + 1;

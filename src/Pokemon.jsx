@@ -1,4 +1,3 @@
-
 function RandomPokemon(){
     const randNumb = Math.trunc(Math.random() * 150) + 1;
     const imagePoke = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randNumb}.png`

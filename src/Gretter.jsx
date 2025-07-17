@@ -1,5 +1,3 @@
-import "./index.css"
-
 export default function Gretting(props){
     console.log(props.person);
     return <div> <p>Hey there, {props.person} </p>
