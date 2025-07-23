@@ -1,9 +1,17 @@
-export default function ShopingList({items}){
-    return (
-        <ul> 
-            {items.map(cur => <li key={cur.id} className={!cur.completed && "text-red-600 font-bold"} >{cur.item} : {cur.quantity}</li> )}
-        </ul>
-    )
+import ShopingItem from "./Cart";
+export default function ShopingList({ items }) {
+  return (
+    <ul>
+      {items.map((cur) => (
+        <ShopingItem
+          key={cur.id}
+          item={cur.item}
+          quantity={cur.quantity}
+          completed={cur.completed}
+        />
+      ))}
+    </ul>
+  );
 }
 
 // const data = [{item : "eggs", quantity : 12, completed : false},
